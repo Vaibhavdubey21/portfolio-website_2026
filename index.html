@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vaibhav Dubey — AI Engineer specializing in LLM automation, multi-agent systems, and RAG pipelines." />
+  <title>Vaibhav Dubey — AI Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ═══ NAVBAR ══════════════════════════════════════════════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">VD<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact" class="btn btn-primary nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ════════════════════════════════════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div id="particles-js"></div>
+
+    <!-- Ambient background orbs -->
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <div class="hero-content container">
+      <div class="hero-text">
+
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Available for Projects
+        </div>
+
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Vaibhav Dubey</h1>
+        <p class="hero-title">AI Engineer</p>
+
+        <div class="hero-terminal">
+          <span class="hero-terminal-prompt">~/work $</span>
+          <span class="hero-terminal-text">building </span>
+          <span id="typed-role" class="hero-role-typed"></span>
+        </div>
+
+        <p class="hero-bio">
+          Specializing in LLM-driven automation and multi-agent systems.
+          Production experience with LangChain, LangGraph, n8n &amp; Quarkus.
+        </p>
+
+        <div class="hero-stack">
+          <span>Python</span>
+          <span>LangChain</span>
+          <span>LangGraph</span>
+          <span>n8n</span>
+          <span>FastAPI</span>
+          <span>RAG</span>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Hire Me <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div><!-- end hero-text -->
+
+      <!-- Avatar style — like reference image -->
+      <div class="hero-visual">
+        <div class="hero-avatar-wrap">
+          <img src="images/avatar2.png" alt="Vaibhav Dubey" class="hero-avatar-img" />
+          <div class="hero-avatar-fade-left"></div>
+          <div class="hero-avatar-fade-bottom"></div>
+          <div class="hero-avatar-glow"></div>
+        </div>
+
+        <!-- Floating social icons — vertical stack on right -->
+        <div class="hero-socials-float">
+          <a href="https://github.com/vaibhavdubey21" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/vaibhav" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:vaibhavdubey830@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+919630868569" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-chevrons">
+        <i class="fas fa-chevron-down"></i>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </a>
+  </section>
+
+  <!-- ═══ TECH MARQUEE STRIP ══════════════════════════════════════════════ -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Python</span><span class="dot-sep">✦</span>
+        <span>LangChain</span><span class="dot-sep">✦</span>
+        <span>LangGraph</span><span class="dot-sep">✦</span>
+        <span>n8n</span><span class="dot-sep">✦</span>
+        <span>FastAPI</span><span class="dot-sep">✦</span>
+        <span>Quarkus</span><span class="dot-sep">✦</span>
+        <span>FAISS</span><span class="dot-sep">✦</span>
+        <span>Pinecone</span><span class="dot-sep">✦</span>
+        <span>React</span><span class="dot-sep">✦</span>
+        <span>Docker</span><span class="dot-sep">✦</span>
+        <span>Claude API</span><span class="dot-sep">✦</span>
+        <span>Spring Boot</span><span class="dot-sep">✦</span>
+        <span>Firebase</span><span class="dot-sep">✦</span>
+        <!-- Duplicate for seamless loop -->
+        <span>Python</span><span class="dot-sep">✦</span>
+        <span>LangChain</span><span class="dot-sep">✦</span>
+        <span>LangGraph</span><span class="dot-sep">✦</span>
+        <span>n8n</span><span class="dot-sep">✦</span>
+        <span>FastAPI</span><span class="dot-sep">✦</span>
+        <span>Quarkus</span><span class="dot-sep">✦</span>
+        <span>FAISS</span><span class="dot-sep">✦</span>
+        <span>Pinecone</span><span class="dot-sep">✦</span>
+        <span>React</span><span class="dot-sep">✦</span>
+        <span>Docker</span><span class="dot-sep">✦</span>
+        <span>Claude API</span><span class="dot-sep">✦</span>
+        <span>Spring Boot</span><span class="dot-sep">✦</span>
+        <span>Firebase</span><span class="dot-sep">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT ════════════════════════════════════════════════════════════ -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-photo-col">
+          <div class="about-photo-wrapper">
+            <img
+              src="images/file_00000000b064720990249e8abdb1897c.png"
+              alt="Vaibhav Dubey"
+              class="about-photo"
+              onerror="this.parentElement.classList.add('photo-fallback')"
+            />
+            <div class="about-photo-accent"></div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <p class="about-label">— Who Am I</p>
+          <h3 class="about-heading">AI Engineer crafting<br/><span class="text-gradient">intelligent automation</span></h3>
+          <p class="about-body">
+            I'm an AI Developer specializing in LLM-driven automation and multi-agent systems.
+            With production experience in LangChain, LangGraph, n8n, and Quarkus microservices,
+            I build end-to-end AI pipelines that solve real-world problems at scale.
+          </p>
+          <p class="about-body">
+            Currently at <strong>Deepneural Technologies</strong> as an AI Engineer, I design
+            RAG architectures, voice AI systems, and autonomous agent workflows that run
+            24/7 without human intervention.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="4">0</span>
+              <span class="stat-label">Live Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="1">0</span>
+              <span class="stat-label">Year XP</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="15">0</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Let's Build Together</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ══════════════════════════════════════════════════════════ -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category glass-card">
+          <div class="skill-category-icon"><i class="fas fa-code"></i></div>
+          <h3 class="skill-category-title">Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">HTML / CSS</span>
+            <span class="skill-tag">React</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category-icon"><i class="fas fa-brain"></i></div>
+          <h3 class="skill-category-title">AI / LLM Stack</h3>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">LangChain</span>
+            <span class="skill-tag highlight">LangGraph</span>
+            <span class="skill-tag highlight">n8n</span>
+            <span class="skill-tag">FAISS</span>
+            <span class="skill-tag">Pinecone</span>
+            <span class="skill-tag">Hugging Face</span>
+            <span class="skill-tag">MCP</span>
+            <span class="skill-tag">Claude API</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category-icon"><i class="fas fa-layer-group"></i></div>
+          <h3 class="skill-category-title">Frameworks</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Quarkus</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">JSP / MVC</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category-icon"><i class="fas fa-database"></i></div>
+          <h3 class="skill-category-title">Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Supabase</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">Firestore</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category-icon"><i class="fas fa-server"></i></div>
+          <h3 class="skill-category-title">DevOps & Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">GCP</span>
+            <span class="skill-tag">Claude Code</span>
+            <span class="skill-tag">Cursor</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-card">
+          <div class="skill-category-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3 class="skill-category-title">Concepts</h3>
+          <div class="skill-tags">
+            <span class="skill-tag highlight">RAG</span>
+            <span class="skill-tag highlight">Multi-Agent</span>
+            <span class="skill-tag">System Design</span>
+            <span class="skill-tag">Semantic Search</span>
+            <span class="skill-tag">Microservices</span>
+            <span class="skill-tag">OOP / DSA</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE ══════════════════════════════════════════════════════ -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <span class="timeline-company">Deepneural Technologies</span>
+                <h3 class="timeline-role">AI Engineer</h3>
+              </div>
+              <span class="timeline-period">Jun 2025 – Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built AI Agent Orchestration pipelines using n8n and LangGraph for enterprise-grade multi-step automation workflows.</li>
+              <li>Developed cloud-native Quarkus microservices as the backend foundation for large-scale RAG data ingestion.</li>
+              <li>Designed and deployed production-ready RAG system integrating LangChain + FAISS for low-latency document Q&A.</li>
+              <li>Built an AI resume-matching platform using Sentence Transformers + GitHub API for accurate candidate ranking.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>LangChain</span><span>LangGraph</span><span>n8n</span>
+              <span>Quarkus</span><span>Python</span><span>FAISS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ════════════════════════════════════════════════════════ -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card" data-tilt>
+          <div class="project-img-wrapper" data-label="Real Estate Newsletter SaaS">
+            <img src="images/AI%20Real%20Estate%20Newsletter%20SaaS.png" alt="AI Real Estate Newsletter SaaS" class="project-img"
+              onerror="this.style.display='none'; this.closest('.project-img-wrapper').classList.add('img-placeholder','placeholder-1')" />
+            <div class="project-img-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-number">01</span>
+              <span class="project-badge-live"><span></span>Live</span>
+            </div>
+            <h3 class="project-title">AI Real Estate Newsletter SaaS</h3>
+            <p class="project-desc">
+              Multitenant SaaS where a LangGraph + Claude agent autonomously researches
+              real estate data, writes articles, and delivers newsletters — zero human involvement.
+            </p>
+            <div class="project-tech">
+              <span>LangGraph</span><span>Claude API</span><span>FastAPI</span><span>GCP</span><span>React</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vaibhavdubey21" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source
+              </a>
+              <a href="https://real-estate-newsletter-agent.web.app/login" target="_blank" rel="noopener" class="project-link primary">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-tilt>
+          <div class="project-img-wrapper" data-label="RAG Recruitment SaaS">
+            <img src="images/RAG-Powered%20Recruitment%20SaaS.png" alt="RAG Recruitment SaaS" class="project-img"
+              onerror="this.style.display='none'; this.closest('.project-img-wrapper').classList.add('img-placeholder','placeholder-2')" />
+            <div class="project-img-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-number">02</span>
+              <span class="project-badge-live"><span></span>Live</span>
+            </div>
+            <h3 class="project-title">RAG-Powered Recruitment SaaS</h3>
+            <p class="project-desc">
+              HR uploads resumes, searches candidates semantically via vector embeddings, gets
+              AI ranking + automated WhatsApp notifications to shortlisted candidates.
+            </p>
+            <div class="project-tech">
+              <span>Quarkus</span><span>LangChain</span><span>Gemini</span><span>Pinecone</span><span>Firebase</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vaibhavdubey21" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source
+              </a>
+              <a href="https://recrugence-staging.web.app/login" target="_blank" rel="noopener" class="project-link primary">
+                <i class="fas fa-external-link-alt"></i> Live
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-tilt>
+          <div class="project-img-wrapper" data-label="AI Voice Receptionist">
+            <img src="images/AI%20Voice%20Receptionist%20Agent.png" alt="AI Voice Receptionist Agent" class="project-img"
+              onerror="this.style.display='none'; this.closest('.project-img-wrapper').classList.add('img-placeholder','placeholder-3')" />
+            <div class="project-img-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-number">03</span>
+            </div>
+            <h3 class="project-title">AI Voice Receptionist Agent</h3>
+            <p class="project-desc">
+              Inbound voice agent that attends calls, schedules appointments in real-time, and
+              suggests alternatives. Telnyx + Deepgram + LiveKit for real-time audio.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>Telnyx</span><span>LiveKit</span><span>Deepgram</span><span>LLM</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vaibhavdubey21" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-card" data-tilt>
+          <div class="project-img-wrapper" data-label="Hybrid LLM Chatbot">
+            <img src="images/Hybrid%20LLM%20Chatbot%20%2B%20RAG.png" alt="Hybrid LLM Chatbot" class="project-img"
+              onerror="this.style.display='none'; this.closest('.project-img-wrapper').classList.add('img-placeholder','placeholder-4')" />
+            <div class="project-img-overlay"></div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-number">04</span>
+            </div>
+            <h3 class="project-title">Hybrid LLM Chatbot + RAG</h3>
+            <p class="project-desc">
+              Telegram bot with both general Q&A and document-specific RAG mode. Upload PDFs
+              to Pinecone, dynamic mode routing, full workflow orchestration via n8n.
+            </p>
+            <div class="project-tech">
+              <span>Telegram</span><span>Pinecone</span><span>n8n</span><span>LLM</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/vaibhavdubey21" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> Source
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EDUCATION ══════════════════════════════════════════════════════ -->
+  <section id="education" class="section education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-cards">
+        <div class="edu-card glass-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-body">
+            <h3 class="edu-degree">B.Tech — Computer Science &amp; Engineering</h3>
+            <p class="edu-institute">Acropolis Institute of Technology, Indore</p>
+            <div class="edu-meta">
+              <span class="edu-year"><i class="far fa-calendar-alt"></i> Sept 2022 – May 2025</span>
+              <span class="edu-cgpa"><i class="fas fa-star"></i> CGPA: 7.01</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-card glass-card">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-body">
+            <h3 class="edu-degree">Diploma — Computer Science</h3>
+            <p class="edu-institute">Govt. Polytechnic College, Ujjain</p>
+            <div class="edu-meta">
+              <span class="edu-year"><i class="far fa-calendar-alt"></i> Aug 2019 – June 2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CERTIFICATIONS ══════════════════════════════════════════════════ -->
+  <section id="certifications" class="section certifications">
+    <div class="container">
+      <h2 class="section-title">Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><i class="fab fa-python"></i></div>
+          <h4 class="cert-name">Python Programming</h4>
+          <span class="cert-date">Jun 2023</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><i class="fab fa-java"></i></div>
+          <h4 class="cert-name">Core Java</h4>
+          <span class="cert-issuer">Internshala</span>
+          <span class="cert-date">Sept 2023</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><i class="fas fa-globe"></i></div>
+          <h4 class="cert-name">Web Development</h4>
+          <span class="cert-issuer">Internshala</span>
+          <span class="cert-date">Oct 2023</span>
+        </div>
+        <div class="cert-card glass-card">
+          <div class="cert-icon-wrap"><i class="fas fa-briefcase"></i></div>
+          <h4 class="cert-name">Technology Job Simulation</h4>
+          <span class="cert-issuer">Deloitte Australia · Forage</span>
+          <span class="cert-date">June 2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT ════════════════════════════════════════════════════════ -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">
+            I'm always open to discussing new AI projects, collaborations, or opportunities.
+            Let's build something intelligent together.
+          </p>
+          <div class="contact-items">
+            <a href="tel:+919630868569" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+              <span>+91 9630868569</span>
+            </a>
+            <a href="mailto:vaibhavdubey830@gmail.com" class="contact-item">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <span>vaibhavdubey830@gmail.com</span>
+            </a>
+            <a href="https://linkedin.com/in/vaibhav" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-item-icon"><i class="fab fa-linkedin"></i></div>
+              <span>linkedin.com/in/vaibhav</span>
+            </a>
+            <a href="https://github.com/vaibhavdubey21" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-item-icon"><i class="fab fa-github"></i></div>
+              <span>github.com/vaibhavdubey21</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form glass-card" id="contactForm" novalidate>
+          <!-- Web3Forms access key — get yours free at web3forms.com -->
+          <input type="hidden" name="access_key" value="c0a6f2c2-709f-486c-a801-62cfc79a9820" id="w3fKey" />
+          <input type="hidden" name="subject" value="New message from Portfolio" />
+          <input type="hidden" name="from_name" value="Portfolio Contact" />
+          <div class="form-group">
+            <input type="text" id="name" name="name" class="form-input" required placeholder=" " autocomplete="name" />
+            <label for="name" class="form-label">Your Name</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" class="form-input" required placeholder=" " autocomplete="email" />
+            <label for="email" class="form-label">Your Email</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="msgsubject" name="msgsubject" class="form-input" required placeholder=" " />
+            <label for="msgsubject" class="form-label">Subject</label>
+            <div class="form-line"></div>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" class="form-input form-textarea" rows="4" required placeholder=" "></textarea>
+            <label for="message" class="form-label">Message</label>
+            <div class="form-line"></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <p id="formStatus" class="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ══════════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">VD<span>.</span></a>
+          <p class="footer-desc">AI Engineer specializing in LLM-driven automation, multi-agent systems, and RAG pipelines.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/vaibhavdubey21" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/vaibhav" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:vaibhavdubey830@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Projects -->
+        <div class="footer-links">
+          <h4 class="footer-heading">Live Projects</h4>
+          <ul>
+            <li><a href="https://real-estate-newsletter-agent.web.app/login" target="_blank" rel="noopener">Real Estate AI</a></li>
+            <li><a href="https://recrugence-staging.web.app/login" target="_blank" rel="noopener">RAG Recruitment</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-contact">
+          <h4 class="footer-heading">Get In Touch</h4>
+          <a href="mailto:vaibhavdubey830@gmail.com" class="footer-contact-item">
+            <i class="fas fa-envelope"></i> vaibhavdubey830@gmail.com
+          </a>
+          <a href="tel:+919630868569" class="footer-contact-item">
+            <i class="fas fa-phone"></i> +91 9630868569
+          </a>
+          <a href="https://linkedin.com/in/vaibhav" target="_blank" rel="noopener" class="footer-contact-item">
+            <i class="fab fa-linkedin"></i> linkedin.com/in/vaibhav
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Vaibhav Dubey. All rights reserved.</p>
+        <p>Built with <span style="color:var(--cyan)">&#10084;</span> &amp; AI</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
