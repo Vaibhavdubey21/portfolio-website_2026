@@ -350,10 +350,30 @@ const GsapAnimations = {
   }
 };
 
+// ─── SMOOTH SCROLL ───────────────────────────────────────────────────────────
+
+const SmoothScroll = {
+  init() {
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (href === '#') return;
+        const target = document.querySelector(href);
+        if (!target) return;
+        e.preventDefault();
+        const offset = 80; // navbar height
+        const top = target.getBoundingClientRect().top + window.scrollY - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+      });
+    });
+  }
+};
+
 // ─── INIT ────────────────────────────────────────────────────────────────────
 
 function boot() {
   CursorGlow.init();
+  SmoothScroll.init();
   NavController.init();
   HeroParticles.init();
   HeroTyped.init();

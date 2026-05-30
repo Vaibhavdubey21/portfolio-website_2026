@@ -55,7 +55,10 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
-  -webkit-text-size-adjust: 100%; /* prevent iOS font scaling */
+  -webkit-text-size-adjust: 100%;
+  /* Smoother rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
